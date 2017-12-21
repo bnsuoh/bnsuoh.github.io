@@ -4,17 +4,18 @@ body {
 }
 
 #bio {
-  padding: 3rem 1.5rem;
+  padding: 4rem 1.5rem;
   text-align: left;
 }
 
 .navbar {
-	height: 5rem;
+	height: 5.7rem;
 	background-color: #EEEEEE;
 }
 
 .navbar-brand {
-	font-size: 2.5em;
+	font-size: 3em;
+	color: #ba0303;
 }
 
 .navbar-brand, .navbar-nav > li, h3 {
@@ -23,11 +24,16 @@ body {
 }
 
 .navbar-nav > li {
-	font-size: 1.4em;
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size:2em;
 }
 
 p {
 	font-family: 'Cardo', serif;
+	font-size: 1.1em;
 }
 
 @media (max-width: 768px) {
