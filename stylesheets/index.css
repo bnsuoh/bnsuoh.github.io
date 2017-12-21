@@ -1,0 +1,47 @@
+body {
+  padding-top: 5rem;
+  background-color: #FFFFFF;
+}
+
+#bio {
+  padding: 3rem 1.5rem;
+  text-align: left;
+}
+
+.navbar {
+	height: 5rem;
+	background-color: #EEEEEE;
+}
+
+.navbar-brand {
+	font-size: 2.5em;
+}
+
+.navbar-brand, .navbar-nav > li, h3 {
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+}
+
+.navbar-nav > li {
+	font-size: 1.4em;
+}
+
+p {
+	font-family: 'Cardo', serif;
+}
+
+@media (max-width: 768px) {
+	#bio > img {
+		width: 80%;
+	}
+	#bio-text {
+		padding-top: 3em;
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	#bio-text {
+  	padding: 0rem 3rem;
+	}
+}
