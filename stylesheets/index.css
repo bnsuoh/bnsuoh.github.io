@@ -124,6 +124,7 @@ section { padding: 60px; }
 #profpic {
 	width: 100%;
 	filter: opacity(95%);
+	padding-bottom: 1em;
 }
 
 #bio {
@@ -297,9 +298,13 @@ footer {
 
 /*------------------ SCREEN-SPECIFIC CSS -------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	h1 {
 		font-size: 3em;
+	}
+
+	#profpic {
+		width: 75%;
 	}
 
 	#bio {
