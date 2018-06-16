@@ -149,14 +149,19 @@ section { padding: 60px; }
 
 #links li {
 	display: inline-block;
-	padding: 5px;
+	padding: 10px;
 	font-size: 2em;
-	-webkit-transition: .5s;
-	transition: .5s;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform
 }
 
-#links a:hover {
-	color: #bbb;
+#links li:hover,
+#links li:focus,
+#links li:active {
+    transform: scale(1.5);
 }
 
 #links a {
@@ -174,6 +179,16 @@ section { padding: 60px; }
 #about a {
 	color: var(--color-light);
 	font-weight: bold;
+}
+
+#about img {
+	transition-duration: 0.3s;
+	transition-property: transform;
+	padding-left: 15px;
+}
+
+#about img:hover {
+	transform: scale(1.1);
 }
 
 /*------------------ EXPERIENCE -------------------*/
@@ -282,9 +297,8 @@ section { padding: 60px; }
 }
 
 #contact i {
-	font-size: 1.5em;
-	padding: 15px;
-	margin-top: 10px;
+	font-size: 1.3em;
+	margin-top: 15px;
 }
 
 /*------------------ FOOTER -------------------*/
