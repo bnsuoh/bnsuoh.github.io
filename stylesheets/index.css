@@ -3,7 +3,9 @@
   --color1-hover: #8d7aa8;
   --color-dark: black;
   --color-light: white;
-  --color2: #8fd0ea;
+  --color2: #2fa8d8;
+  --color2-hover: #77d4f9;
+  /*--color2: #8fd0ea;*/
   --color3: #c64776;
   --color4: #478c5e;
 }
@@ -12,9 +14,14 @@ body {
   background-color: #ffffff;
 }
 
+h1, h2, h3, h4, h5, p {
+	cursor: default;
+}
+
 h1 {
 	font-size: 6em;
 	font-family: 'Satisfy', cursive;
+	cursor: default;
 }
 
 h2 {
@@ -176,7 +183,7 @@ section {
 		text-align: center;
 	}
 
-	#experience .exp-item > .col-md-4 {
+	.sect-item > .col-md-4 {
 		text-align: left;
 	}
 }
@@ -190,7 +197,7 @@ section {
   		padding: 0rem 3rem;
 	}
 
-	#experience .exp-item > .col-md-4 {
+	.sect-item > .col-md-4 {
 		text-align: right;
 	}
 }
@@ -198,43 +205,105 @@ section {
 /* About */
 #about {
 	background-color: var(--color2);
+	color: var(--color-light);
 }
 
 #about a {
-	color: black;
+	color: var(--color-light);
 	font-weight: bold;
+}
+
+#about p {
+	text-align: right;
 }
 
 /* Experience */
 
-#experience .exp-item {
-	padding: 2em 0em;
+#experience h2 {
+	color: var(--color4);
 }
 
-#experience .exp-item > .col-md-4 {
-	color: var(--color-dark)
+#experience .sect-item {
+	padding: 2em;
+	margin: 2em;
+	background-color: var(--color4);
+	color: var(--color-light);
 }
 
 #experience h3 {
 	font-weight: bold;
 }
 
-/* Projects */
-#projects {
+/* Skills */
+#skills {
 	background-color: var(--color3);
 	color: var(--color-light);
 }
 
-/* Skills */
+#skills p {
+	padding-top: 20px;
+}
 
+#skills .skill-container {
+  width: 100%;
+  background-color: #ddd;
+  height: 30px;
+}
+
+#skills .skill-level {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  height: 30px;
+  color: white;
+}
+
+.java {width: 90%; background-color: var(--color2);}
+.cs {width: 85%; background-color: var(--color2);}
+.htmlcss {width: 90%; background-color: var(--color2);}
+.javascript {width: 80%; background-color: var(--color2);}
+.python {width: 85%; background-color: var(--color2);}
+.unity {width: 75%; background-color: var(--color2);}
+.arduino {width: 70%; background-color: var(--color2);}
+.c {width: 75%; background-color: var(--color2);}
+
+/* Projects */
+
+#projects h2 {
+	color: var(--color2);
+}
+
+#projects .sect-item {
+	padding: 2em;
+	margin: 2em;
+	background-color: var(--color2);
+	color: var(--color-light);
+}
+
+#projects a {
+	color: var(--color-light);
+	text-decoration: underline;
+}
+
+#projects h3 {
+	font-weight: bold;
+}
+
+/* Volunteering */
+#volunteering {
+	background-color: var(--color4);
+	color: var(--color-light);
+}
 
 /* Contact */
 #contact {
-	background-color: var(--color4);
-	color: var(--color-light);
+	color: var(--color-dark);
 }
 
 /* Footer */
 footer {
 	padding: 1em;
+	padding-top: 2em;
+	background-color: var(--color1);
+	color: var(--color-light);
 }
