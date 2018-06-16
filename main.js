@@ -61,3 +61,9 @@ $(window).on("load",function() {
     });
   }).scroll(); //invoke scroll-handler on page-load
 });
+
+// Display navbar on small screen
+function toggleNavbar() {
+    var x = document.getElementById("navbar");
+    
+}

@@ -1,3 +1,5 @@
+
+/*------------------ VARIABLES -------------------*/
 :root {
   --color1: #675682;
   --color1-hover: #8d7aa8;
@@ -5,14 +7,16 @@
   --color-light: white;
   --color2: #2fa8d8;
   --color2-hover: #77d4f9;
-  /*--color2: #8fd0ea;*/
   --color3: #c64776;
   --color4: #478c5e;
   --color4-hover: #52a56e;
 }
 
+/*------------------ GENERAL -------------------*/
+
 body {
-  background-color: #ffffff;
+  background-color: --color-light;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -30,32 +34,15 @@ h2 {
 	font-family: 'Satisfy', cursive;
 }
 
-h3 {
-	font-size:1.5em;
-	font-family: 'Open Sans', sans-serif;
-}
+h3 { font-size:1.5em; }
 
-h4 {
-	font-size: 1.5em;
-	font-family: 'Open Sans', sans-serif;
-}
+h4 { font-size: 1.5em; }
 
-h5 {
-	font-family: 'Open Sans', sans-serif;
-}
+p { font-size: 1.1em; }
 
-p {
-	font-size: 1.1em;
-	font-family: 'Open Sans', sans-serif;
-}
+.fade { opacity: 1; }
 
-.fade {
-  opacity: 1;
-}
-
-section {
-	padding: 60px;
-}
+section { padding: 60px; }
 
 .section-title {
 	padding: 1em;
@@ -67,18 +54,13 @@ section {
     margin: 0 auto;
 }
 
-#profpic {
-	width: 100%;
-	filter: opacity(95%);
-}
-/* Sticky Navbar */
+/*------------------ NAVBAR -------------------*/
 
 #navbar-container {
 	height: 3em;
 }
 
 #navbar {
-  	overflow: hidden;
  	z-index: 1;
  	-webkit-transition: .25s; /* Safari */
 	transition: .25s;
@@ -101,6 +83,11 @@ section {
 
 #navbar a:hover {
   background-color: var(--color1-hover);
+  color: var(--color-light);
+}
+
+#navbar .icon, #navbar #home {
+ 	display: none;
 }
 
 .content {
@@ -112,7 +99,7 @@ section {
 }
 
 .non-sticky a {
-	color: var(--color-dark);
+	color: var(--color1);
 }
 
 .sticky {
@@ -131,14 +118,13 @@ section {
 	padding-top: 60px;
 }
 
-@media (min-width: 768px) {
-	.page {
-		height: 90vh;
-	}
+
+/*------------------ HEADER -------------------*/
+
+#profpic {
+	width: 100%;
+	filter: opacity(95%);
 }
-
-
-/* HEADER PAGE */
 
 #bio {
 	padding-top: 2rem;
@@ -169,7 +155,6 @@ section {
 }
 
 #links a:hover {
-	/*font-size: 2.5em;*/
 	color: #bbb;
 }
 
@@ -179,35 +164,7 @@ section {
 	transition: .5s;
 }
 
-@media (max-width: 768px) {
-	#bio > img {
-		width: 80%;
-	}
-	#bio-text {
-		padding-top: 3rem;
-		text-align: center;
-	}
-
-	.sect-item > .col-md-4 {
-		text-align: left;
-	}
-}
-
-@media (min-width: 768px) {
-	#bio {
-		height:100vh;
-		padding-top: 10rem;
-	}
-	#bio-text {
-  		padding: 0rem 3rem;
-	}
-
-	.sect-item > .col-md-4 {
-		text-align: right;
-	}
-}
-
-/* About */
+/*------------------ ABOUT ME -------------------*/
 #about {
 	background-color: var(--color2);
 	color: var(--color-light);
@@ -218,11 +175,7 @@ section {
 	font-weight: bold;
 }
 
-#about p {
-	text-align: right;
-}
-
-/* Experience */
+/*------------------ EXPERIENCE -------------------*/
 
 #experience h2 {
 	color: var(--color4);
@@ -230,7 +183,7 @@ section {
 
 #experience .sect-item {
 	padding: 2em;
-	margin: 2em;
+	margin: 2em 0;
 	background-color: var(--color4);
 	color: var(--color-light);
 }
@@ -239,7 +192,7 @@ section {
 	font-weight: bold;
 }
 
-/* Skills */
+/*------------------ SKILLS -------------------*/
 #skills {
 	background-color: var(--color3);
 	color: var(--color-light);
@@ -272,7 +225,7 @@ section {
 .arduino {width: 60%; background-color: var(--color2);}
 .c {width: 70%; background-color: var(--color2);}
 
-/* Projects */
+/*------------------ PROJECTS -------------------*/
 
 #projects h2 {
 	color: var(--color2);
@@ -280,7 +233,7 @@ section {
 
 #projects .sect-item {
 	padding: 2em;
-	margin: 2em;
+	margin: 2em 0;
 	background-color: var(--color2);
 	color: var(--color-light);
 }
@@ -294,7 +247,8 @@ section {
 	font-weight: bold;
 }
 
-/* Volunteering */
+/*------------------ VOLUNTEERING -------------------*/
+
 #volunteering {
 	background-color: var(--color4);
 	color: var(--color-light);
@@ -332,10 +286,69 @@ section {
 	margin-top: 10px;
 }
 
-/* Footer */
+/*------------------ FOOTER -------------------*/
+
 footer {
 	padding: 1em;
 	padding-top: 2em;
 	background-color: var(--color1);
 	color: var(--color-light);
+}
+
+/*------------------ SCREEN-SPECIFIC CSS -------------------*/
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 3em;
+	}
+
+	#bio {
+		height: calc(100vh - 6em);
+	}
+
+	#bio > img {
+		width: 70%;
+	}
+
+	#bio-text {
+		padding-top: 3rem;
+		text-align: center;
+	}
+
+	#navbar, #navbar-container {
+		height: 6em;
+	}
+
+	section {
+		padding: 20px;
+	}
+
+	#about p {
+		text-align: center;
+	}
+
+	.sect-item {
+		text-align: left;
+		padding: 0;
+	}
+
+
+}
+
+@media (min-width: 768px) {
+	#bio {
+		height: calc(100vh - 3em);
+		padding-top: 10rem;
+	}
+	#bio-text {
+  		padding: 0rem 3rem;
+	}
+
+	.sect-item > .col-md-4 {
+		text-align: right;
+	}
+
+	#about p {
+		text-align: right;
+	}
 }
