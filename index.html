@@ -7,27 +7,139 @@
     <title>Bensu Sicim</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="stylesheets/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Open+Sans|Satisfy" rel="stylesheet">
+
   </head>
 
   <body>
-    <main role="main" class="container">
-    	<div id="navbar-frame"></div>
-      <div id="bio">
-      	<div class="row">
-      		<div class="col-md-4">
-		      <img src="profpic.jpg" class="rounded-circle" style="width:100%">
-		    </div>
-		    <div id="bio-text" class="col-md-8">
-		    	<h3>Biography</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ligula elit, ullamcorper quis fringilla at, venenatis at leo. Vivamus rutrum lorem urna, eget ornare lectus feugiat tincidunt. Etiam sollicitudin ultrices tellus non molestie. In hac habitasse platea dictumst. Etiam dui odio, condimentum nec sapien vitae, imperdiet tempus velit. Integer dapibus nisl eu augue aliquet tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vitae velit pharetra, mattis enim eu, semper quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-					</p>
-					<p>
-						Curabitur tristique lectus nulla, id malesuada augue aliquet non. Nullam blandit vitae ex eget pretium. Donec sed felis tincidunt, ultrices dui et, imperdiet metus. Sed enim dolor, volutpat maximus tortor nec, sagittis molestie erat. Suspendisse condimentum risus et diam tincidunt, eget dictum neque vestibulum. Fusce quis vulputate tortor. Nunc eget porta nunc, id ultricies nisl. Quisque ac interdum sapien. Quisque placerat eleifend porta. Proin luctus justo a leo euismod ullamcorper. Donec lacinia tellus nec massa ultrices sagittis. Quisque placerat ac diam at vestibulum. Nulla tempus at nisl a semper.
-					</p>
-		    </div>
+    <main role="main">
+      <section id="bio" class="page">
+        <div id="bio-container">
+	      	<div class="row">
+	      		<div class="col-md-3 col-centered">
+				      <img src="profpic.jpg" id="profpic" class="rounded-circle" style="text-align: center">
+				    </div>
+				  </div>
+          <div class="row">
+            <div class="col-centered" style="text-align: center">
+              <h1>Bensu Sicim</h1>
+              <h3>Princeton University '19. Developer. Student. Dreamer.</h3>
+            </div>
+          </div>
+          <div id="links">
+            <ul>
+              <li><a href="https://github.com/bnsuoh" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/bensusicim/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://twitter.com/bensusicim" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/bensusicim/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/bensu.sicim" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://drive.google.com/file/d/0B7x7Wl-RKSOMajFfcXFPdmU1SDA/view?usp=sharing" target="_blank"><i class="far fa-file-pdf"></i></a></li>
+              <li><a href="mailto:bensusicim@gmail.com"><i class="far fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div id="navbar-container">
+        <div id="navbar" align="center" class = "non-sticky">
+          <a href="#about" class="scroll-trigger">About</a>
+          <a href="#experience" class="scroll-trigger">Experience</a>
+          <a href="#projects" class="scroll-trigger">Projects</a>
+          <a href="#skills" class="scroll-trigger">Skills</a>
+          <a href="#contact" class="scroll-trigger">Contact</a>
         </div>
       </div>
+
+      <section id="about">
+        <div class="container">
+          <div style="text-align: center; padding-bottom: 2em">
+            <div class="section-title">
+              <h2>About Me</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-7 col-centered">
+                <p> Hello! I am a fourth-year <b>Princeton University</b> Computer Science undergratuate student from Turkey. I started coding in my fourth-year of high school through AP Computer Science, and fell in love with it.</p>
+
+                <p>Outside of school, I am the President of <a href="acapellago.princeton.edu">Princeton Acapellago</a>, a no-audition a cappella singing group. I enjoy drawing, playing violin, eating pizza, and playing video games.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+      	<div class="container">
+          <div class="section-title">
+            <h2>Professional Experience</h2>
+          </div>
+    			<div class="exp-item row">
+      			<div class="col-md-4">
+      				<h3>Microsoft</h3>
+      				<h5>June 2017 - August 2017</h5>
+      			</div>
+      			<div class="col-md-8">
+	      			<h4>Software Engineer Intern</h4>
+	      			<p>Worked as the only Software Developer on Project Lumiere. Built a proof-of-concept HoloLens application using Unity, C#, and the Windows Mixed Reality APIs.</p>
+	      		</div>
+	      	</div>
+
+	      	<div class="exp-item row">
+	      		<div class="col-md-4">
+      				<h3>Microsoft</h3>
+      				<h5>June 2016 - August 2016</h5>
+      			</div>
+      			<div class="col-md-8">
+	      			<h4>Explorer Intern</h4>
+	      			<p>Worked as Software Developer and Program Manager in JumpStart onboarding tool. The tool lets a new employee find onboarding tools and resources specifically for their department and project. The tool used to make the user search through a project tree with hundreds of nodes. As a team of three interns, we worked on turning the tree and their resources into a searchable list. I programmed an auto-fill mechanism that uses the device login information and searches the Microsoft employee database to find the employee’s department and management chain, and filter through the list automatically. I also redesigned the product for user friendliness.</p>
+	      		</div>
+    			</div>
+
+    			<div class="exp-item row">
+	      		<div class="col-md-4">
+      				<h3>Princeton University Office of Information Technologies</h3>
+      				<h5>September 2016 - June 2018</h5>
+      			</div>
+      			<div class="col-md-8">
+	      			<h4>Part-Time Student Technology Consultant</h4>
+	      			<p>Worked with the Office of Information Technologies (OIT) to help Princeton students with questions and problems related to computing and telecommunication.</p>
+	      		</div>
+    			</div>
+      	</div>
+      </section>
+
+      <section id="projects">
+      	<div class="container">
+    			<div class="section-title">
+            <h2>Projects</h2>
+            <h5>Under construction</h5>
+          </div>
+      	</div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <div class="section-title">
+            <h2>Skills</h2>
+            <h5>Under construction</h5>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <h5>Under construction</h5>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+          <div class="container" style="text-align: center">
+              <p><b>Made with <i class="fas fa-heart"></i> by Bensu in 2018</b></p>
+          </div>
+      </footer>
 
     </main><!-- /.container -->
 
