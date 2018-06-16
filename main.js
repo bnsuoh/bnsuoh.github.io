@@ -1,8 +1,5 @@
-$(document).ready(function(){
-    $("#head-frame").load("head.html");
-});
 
-
+// Sticky Navbar
 window.onscroll = function() {stickNavbar()};
 
 var navbar = document.getElementById("navbar");
@@ -18,6 +15,7 @@ function stickNavbar() {
   }
 }
 
+// Smooth Scrolling
 $(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: "#navbar", offset: 50});   
@@ -41,6 +39,6 @@ $(document).ready(function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    }  // End if
+    }
   });
 });
