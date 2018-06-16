@@ -8,6 +8,7 @@
   /*--color2: #8fd0ea;*/
   --color3: #c64776;
   --color4: #478c5e;
+  --color4-hover: #52a56e;
 }
 
 body {
@@ -48,6 +49,10 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.fade {
+  opacity: 1;
+}
+
 section {
 	padding: 60px;
 }
@@ -75,8 +80,8 @@ section {
 #navbar {
   	overflow: hidden;
  	z-index: 1;
- 	-webkit-transition: .5s; /* Safari */
-	transition: .5s;
+ 	-webkit-transition: .25s; /* Safari */
+	transition: .25s;
 	float: none;
 	height: 3em;
 }
@@ -88,8 +93,8 @@ section {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
-	-webkit-transition: .5s; /* Safari */
-	transition: .5s;
+	-webkit-transition: .25s; /* Safari */
+	transition: .25s;
 	height: 3em;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -263,9 +268,9 @@ section {
 .htmlcss {width: 90%; background-color: var(--color2);}
 .javascript {width: 80%; background-color: var(--color2);}
 .python {width: 85%; background-color: var(--color2);}
-.unity {width: 75%; background-color: var(--color2);}
-.arduino {width: 70%; background-color: var(--color2);}
-.c {width: 75%; background-color: var(--color2);}
+.unity {width: 65%; background-color: var(--color2);}
+.arduino {width: 60%; background-color: var(--color2);}
+.c {width: 70%; background-color: var(--color2);}
 
 /* Projects */
 
@@ -295,9 +300,36 @@ section {
 	color: var(--color-light);
 }
 
+#volunteering .volunteer-item {
+	padding: .5em;
+}
+
+#volunteering .content {
+	padding: 1em;
+	background-color: var(--color4-hover);
+}
+
+#volunteering h3 {
+	font-weight: bold;
+}
+
 /* Contact */
 #contact {
+	text-align: center;
 	color: var(--color-dark);
+	padding-bottom: 80px;
+}
+
+#contact a {
+	color: var(--color-dark);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#contact i {
+	font-size: 1.5em;
+	padding: 15px;
+	margin-top: 10px;
 }
 
 /* Footer */
