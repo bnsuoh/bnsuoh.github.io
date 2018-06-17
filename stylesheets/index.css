@@ -128,7 +128,7 @@ section { padding: 60px; }
 }
 
 #bio {
-	padding-top: 2rem;
+	padding-top: 1rem;
   	text-align: center;
   	background-color: var(--color1); /*rgb(178, 8, 105);/*#49265e;*/
   	color: var(--color-light);
@@ -357,7 +357,7 @@ footer {
 @media (min-width: 768px) {
 	#bio {
 		height: calc(100vh - 3em);
-		padding-top: 10rem;
+		padding-top: 6rem;
 	}
 	#bio-text {
   		padding: 0rem 3rem;
